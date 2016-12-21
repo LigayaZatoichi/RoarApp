@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import './index.css';
+import NavBar from './navbar';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+var MasterPage = React.createClass({
+
+  render: function () {
+
+    return <NavBar/>
+
+  }
+
+});
+
+ReactDOM.render(<MasterPage/>, document.getElementById('root'));
